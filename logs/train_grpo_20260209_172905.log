@@ -1,0 +1,84 @@
+nohup: ignoring input
+W0209 17:29:13.525000 831918 site-packages/torch/distributed/run.py:803] 
+W0209 17:29:13.525000 831918 site-packages/torch/distributed/run.py:803] *****************************************
+W0209 17:29:13.525000 831918 site-packages/torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0209 17:29:13.525000 831918 site-packages/torch/distributed/run.py:803] *****************************************
+--- My GRPO Auto-Configured ---
+Detected GPUs (Num Processes): 6
+Per-Device Prompt Batch: 1
+Global Prompt Batch (across all GPUs): 6
+Total Inference Samples per Step: 24 (== num_gpus x per_device_prompt_batch x group_size)
+---------------------------------------
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.66it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.64it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.85it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.84it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.82it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.81it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 28.12it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 27.77it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 27.76it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.05it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.11s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.08s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.01s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.02s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.19it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.11it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.17it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.13it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.17it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.08it/s]
+Before initializing optimizer states
+MA 13.5 GB         Max_MA 14.46 GB         CA 14.59 GB         Max_CA 15 GB 
+CPU Virtual Memory:  used = 24.44 GB, percent = 4.9%
+After initializing optimizer states
+MA 13.5 GB         Max_MA 15.42 GB         CA 16.51 GB         Max_CA 17 GB 
+CPU Virtual Memory:  used = 24.42 GB, percent = 4.8%
+After initializing ZeRO optimizer
+MA 13.5 GB         Max_MA 13.5 GB         CA 16.51 GB         Max_CA 17 GB 
+CPU Virtual Memory:  used = 24.42 GB, percent = 4.8%
+Starting GRPO training...
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/jx88/miniconda3/envs/test2/lib/python3.10/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+----------------------------------------
+Sample (Reward=0.60): To ensure that the piecewise function \( f(x) \) is continuous at the points where the definition changes, we need to make sure that the left-hand limit and the right-hand limit of \( f(x) \) are equa...
+----------------------------------------
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/jx88/miniconda3/envs/test2/lib/python3.10/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/jx88/miniconda3/envs/test2/lib/python3.10/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/jx88/miniconda3/envs/test2/lib/python3.10/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/jx88/miniconda3/envs/test2/lib/python3.10/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/jx88/miniconda3/envs/test2/lib/python3.10/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Step   0 | Loss: -0.0017 | Raw Reward: 0.5000 | Train Reward: 0.4908 | KL Div: -0.0008
+Step   1 | Loss: -0.0003 | Raw Reward: 0.6875 | Train Reward: 0.6882 | KL Div: 0.0022
+Step   2 | Loss: 0.0337 | Raw Reward: 0.7250 | Train Reward: 0.7370 | KL Div: -0.0157
+Step   3 | Loss: 0.0612 | Raw Reward: 0.8750 | Train Reward: 0.6928 | KL Div: -0.0571
+Step   4 | Loss: -0.0303 | Raw Reward: 0.9500 | Train Reward: 0.6436 | KL Div: 0.0020
+----------------------------------------
+Sample (Reward=1.00): For the function \( f(x) \) to be continuous, the left-hand limit and the right-hand limit of \( f(x) \) at each point of discontinuity must be equal. This includes points where the expressions for \(...
+----------------------------------------
+Step   5 | Loss: -0.0178 | Raw Reward: 0.9625 | Train Reward: 0.6777 | KL Div: 0.0237
+Step   6 | Loss: -0.0293 | Raw Reward: 0.9625 | Train Reward: 0.6971 | KL Div: 0.0081
+Step   7 | Loss: -0.0027 | Raw Reward: 0.9625 | Train Reward: 0.6131 | KL Div: 0.0649
+Step   8 | Loss: 0.0585 | Raw Reward: 0.9125 | Train Reward: 0.5243 | KL Div: 0.0708
+Step   9 | Loss: 0.0095 | Raw Reward: 0.9625 | Train Reward: 0.5469 | KL Div: 0.0396
+----------------------------------------
+Sample (Reward=0.95): For the piecewise function to be continuous at \( x = 2 \), the left-hand limit must equal the right-hand limit. Let's evaluate both: 1. From the left-hand side (\( x \rightarrow 2^- \)): \[ f(x) = x ...
+----------------------------------------
+Step  10 | Loss: -0.0484 | Raw Reward: 0.9625 | Train Reward: 0.5359 | KL Div: 0.0786
+Step  11 | Loss: 0.0584 | Raw Reward: 0.9625 | Train Reward: 0.4543 | KL Div: 0.0427
+Step  12 | Loss: -0.0640 | Raw Reward: 0.8625 | Train Reward: 0.4264 | KL Div: 0.1128
+Step  13 | Loss: 0.0841 | Raw Reward: 0.9250 | Train Reward: 0.5171 | KL Div: 0.0884
+Step  14 | Loss: 0.0224 | Raw Reward: 0.8875 | Train Reward: 0.5213 | KL Div: 0.0674
+----------------------------------------
+Sample (Reward=0.95): For the piecewise function to be continuous, the function values must be the same at all points where the rules change. This means that the three equations should meet at \(x = 2\) and \(x = -2\).  1....
+----------------------------------------
+Step  15 | Loss: 0.0641 | Raw Reward: 0.9750 | Train Reward: 0.6004 | KL Div: 0.1108
+Step  16 | Loss: 0.0154 | Raw Reward: 1.0000 | Train Reward: 0.6083 | KL Div: 0.1177
+Step  17 | Loss: 0.0624 | Raw Reward: 0.9000 | Train Reward: 0.5385 | KL Div: 0.0309
+Step  18 | Loss: 0.0324 | Raw Reward: 0.9875 | Train Reward: 0.4431 | KL Div: 0.1387
+Step  19 | Loss: -0.0045 | Raw Reward: 0.9875 | Train Reward: 0.7088 | KL Div: 0.0500
+Training Finished!
