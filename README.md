@@ -1,5 +1,7 @@
 # Transparent GRPO
 
+## [English Version](./README.md) | [Chinese Version](./README-cn.md)
+
 **A minimal, single-file implementation of Group Relative Policy Optimization (GRPO).**
 
 Current RLHF/RL libraries (TRL, OpenRLHF) are powerful but often hide the mathematical logic behind layers of abstraction, callbacks, and complex class inheritances. **Transparent GRPO** is designed for researchers and engineers who want to:
