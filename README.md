@@ -65,7 +65,7 @@ This repository strips away the magic. Here is where the core GRPO mechanics liv
 | Component | Description |
 | --- | --- |
 | **Generation** | Standard `model.generate()` is called inside the loop. No hidden `Actor` classes. |
-| **Group Sampling** | `Config.group_size = 4`. We generate outputs for every prompt. |
+| **Group Sampling** | `Config.group_size = 4`. We generate $G$ outputs for every prompt. |
 | **Reward Function** | A custom regular-expression based reward system for a specific algebra problem (`ToyEnv` in code). |
 | **Ref Model LogProbs** | Calculate $\pi_{\text{ref}}(y \| x)$ |
 | **KL Divergence** | Calculate the per-token KL: $\log \pi_\theta(y \| x) - \log \pi_{\text{ref}}(y \| x)$ |
